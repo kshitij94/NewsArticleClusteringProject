@@ -1,0 +1,21 @@
+1) create a hash map.
+2) initialise url = "washinton post"
+2.5) initiailse queue ;
+insert url into queue.
+3) loop :
+	
+		url = queue.pop();
+		a) check if url into the hash.if yes go to b other wise c.
+		b) continue
+		c) insert the url into hash.
+		d) html = extract the html of the url.
+		e) articleBody = extract the article-body from the html. if not able to find to articleBody just continue.
+		f) filter the articleBody
+		h) keyword = extract the meta data name keyword if not able to find the metadata just continue.
+		i) output to the file /metadatra.txt. in the following format
+			: articleCount : keyword
+		j) output the articleBody to /articleCount.txt
+		k) extract all the a href link.
+		l) check to see whether it contains the washington root link. if no continue
+			if yes then insert it into queue.  
+		

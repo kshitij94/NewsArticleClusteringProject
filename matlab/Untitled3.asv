@@ -1,0 +1,7 @@
+mat = xlsread('C:\Users\kshitij\Desktop\try\out.xlsx');
+size(mat)
+[row, col] = size(mat);
+for j = 1:col
+    numOfZeros = length(find(mat(:,j) == 0));
+    fprintf('\ncolumn %d : %d',  )
+end
